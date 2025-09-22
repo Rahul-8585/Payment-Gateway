@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Rahul's Payment Gateway </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="payment-section">
+        <h1>Payment Details</h1>
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter Your Sweet Name" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter Email" />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone (WhatsApp enabled to access later)</label>
+          <div class="phone-input">
+            <div class="flag">
+              <img src="image.png" alt="IN" />
+              <span>+91</span>
+            </div>
+            <input type="tel" id="phone" placeholder="Enter Phone" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="coupon">Coupon Code</label>
+          <div class="coupon-container">
+            <input type="text" id="coupon" value="EARLYBIRD" />
+            <span class="clear-coupon"><i class="fas fa-times"></i></span>
+          </div>
+          <div class="success-message">
+            <i class="fas fa-check-circle"></i> Offer applied successfully
+          </div>
+        </div>
+
+        <div class="price-card">
+          <div class="price-row">
+            <span>Original Price</span>
+            <span>$9,999.00</span>
+          </div>
+          <div class="price-row">
+            <span>Discount</span>
+            <span class="negative-amount">-$6,049.40</span>
+          </div>
+          <div class="price-row total-row">
+            <span>Total</span>
+            <span>$3,949.60</span>
+          </div>
+        </div>
+
+        <button class="pay-button">
+          <i class="fas fa-lock"></i> Pay $3,950
+        </button>
+        <div class="payment-methods">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-amex"></i>
+          <i class="fab fa-google-pay"></i>
+          <i class="fab fa-apple-pay"></i>
+        </div>
+        <div class="secure-text">
+          <i class="fas fa-shield-alt"></i> Secure payment - 100% safe checkout
+        </div>
+      </div>
+
+      <div class="course-section">
+        <h1 class="course-title">
+          Welcome to Rahul's Payment Gateway 
+        </h1>
+
+        <div class="course-banner">
+          <img
+            src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Dollar"
+          />
+          
+        </div>
+
+        <div class="course-description">
+          This is a Payment Gateway where you will pay me(in Dollar) for doing nothing . Just give me money.
+        </div>
+
+        
+
+        <div class="course-highlights">
+          <div class="highlight-item">
+            <i class="fas fa-dollar"></i>
+            <div>
+              <strong>Currency</strong>
+              <span>Dollar</span>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-dollar"></i>
+            <div>
+              <strong>Expected Amount </strong>
+              <span>$1 Million</span>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <i class="fas fa-users"></i>
+            <div>
+              <strong>ROI</strong>
+              <span>God's Blessings </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-features">
+          <h3>Course includes:</h3>
+          <div class="feature-item">
+            <span class="feature-check"><i class="fas fa-check"></i></span>
+            <span>Live Masterclasses</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-check"><i class="fas fa-check"></i></span>
+            <span>Real time projects</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-check"><i class="fas fa-check"></i></span>
+            <span>Access to recording</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-check"><i class="fas fa-check"></i></span>
+            <span>120+ hours of core teaching with projects discussion</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-check"><i class="fas fa-check"></i></span>
+            <span>Extra Assignments and Quiz to practice</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-check"><i class="fas fa-check"></i></span>
+            <span>Bonus Sessions</span>
+          </div>
+
+          <div class="show-more">
+            <span id="show-more-text">Show more</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
