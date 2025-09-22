@@ -16,10 +16,10 @@ import java.util.UUID;
 @Service
 public class PaymentService {
 
-    @Value("{$razorpay.key_id}")
+    @Value("${razorpay.key_id}")
     private String key_id;
 
-    @Value("{$razorpay.key_secret}")
+    @Value("${razorpay.key_secret}")
     private String key_secret;
 
     @Autowired
@@ -56,3 +56,4 @@ public class PaymentService {
 
     }
 }
+
